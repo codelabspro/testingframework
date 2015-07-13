@@ -58,6 +58,7 @@ daughter.addUIEvent('click')
 daughter.addComponent({
   onReceive: function(event,payload){
   if(event === 'son'){
+    console.log('The daugher was notified that son was clicked');
     daughter.el.setContent('you clicked my brother')
   }
 }
@@ -89,6 +90,7 @@ son.addUIEvent('click')
 son.addComponent({
   onReceive:function(event,payload){
     if(event==='daughter'){
+      console.log('The son was notified that daughter was clicked');
       son.el.setContent('you clicked my sister')
     }
   }
