@@ -11,7 +11,7 @@ FamousEngine.init();
 // UI events are sent up to parent nodes
 var scene = FamousEngine.createScene('body');
 var rootNode = scene.addChild();
-var parent = rootNode.addChild(new Box('parent', 'orange', 0, 0, 1800, 500, '0'));
+var parent = rootNode.addChild(new Box('parent', 'orange', 0, 0, 900, 500, '0'));
 
 // onReceive catches all UI events that we
 // added to the node and all child nodes
